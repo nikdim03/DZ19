@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CatCell" id="0TS-Ch-Vmt" customClass="CatCell" customModule="DZ19" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Wpe-f5-STX">
+                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DpS-pc-9St">
+                        <rect key="frame" x="2" y="2" width="124" height="124"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIU-ad-X2V">
+                        <rect key="frame" x="36.333333333333329" y="79.333333333333329" width="55.333333333333329" height="38.666666666666671"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="0.86387310610000001" green="0.3040177584" blue="0.84318189929999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="24" name="Noteworthy-Bold"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OIU-ad-X2V" firstAttribute="centerX" secondItem="Wpe-f5-STX" secondAttribute="centerX" id="5Un-4V-3ME"/>
+                    <constraint firstAttribute="trailing" secondItem="DpS-pc-9St" secondAttribute="trailing" constant="2" id="8Xh-Ol-GbH"/>
+                    <constraint firstItem="DpS-pc-9St" firstAttribute="top" secondItem="Wpe-f5-STX" secondAttribute="top" constant="2" id="EhK-Bt-7pU"/>
+                    <constraint firstItem="DpS-pc-9St" firstAttribute="leading" secondItem="Wpe-f5-STX" secondAttribute="leading" constant="2" id="Rt5-t6-dfl"/>
+                    <constraint firstAttribute="bottom" secondItem="OIU-ad-X2V" secondAttribute="bottom" constant="10" id="jvd-mr-Ckg"/>
+                    <constraint firstAttribute="bottom" secondItem="DpS-pc-9St" secondAttribute="bottom" constant="2" id="rGp-sI-Mrt"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="catImage" destination="DpS-pc-9St" id="FHp-g9-5Sb"/>
+                <outlet property="catLabel" destination="OIU-ad-X2V" id="BFR-K8-WhR"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="414"/>
+        </collectionViewCell>
+    </objects>
+</document>
